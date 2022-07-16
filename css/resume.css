@@ -1,0 +1,276 @@
+@charset "utf-8";
+
+.h_inner > li:last-child > a:first-child{
+  font-weight: bold;
+  color: #4E76E4;
+  text-decoration: underline;
+}
+
+main{height:2300px;}
+section{
+  position: relative;
+  top:150px;
+  width:1200px; 
+  margin: 0px auto;
+}
+
+
+
+
+
+
+
+
+
+/* 타이틀 */
+.title > ul{display: flex;}
+.title > ul > li:first-child{
+  font-family: '나눔스퀘어';
+  font-size: 80px;
+}
+.title > ul > li:last-child{
+  width:180px; height:70px;
+  position: absolute;
+  right:0px;
+  text-align: center;
+}
+.title > ul > li > a{
+  width:180px; height:70px;
+  line-height:60px;
+  font-family: '나눔스퀘어라운드';
+  font-size:17px;
+  background-color: #4E76E4;
+  border-radius: 35px;
+  color: #fff;
+  font-weight: bold;
+  display: block;
+  transition: 0.3s;
+  border:5px solid #4E76E4;
+  box-sizing: border-box;
+}
+.title > ul > li > a:hover{
+  background: #fff;
+  color: #4E76E4;
+}
+
+
+
+
+
+
+
+
+
+/* 프로필 */
+.profile{
+  position: relative;
+  margin-top:166px;
+  opacity: 0;
+}
+.profile > ul{
+  width:1059px; height:346px;
+  text-align: center;
+}
+.profile li{
+  position:absolute;
+  top:50%; left:50%;
+  transform: translate(-50%,-50%);
+}
+.profile li:nth-child(2){
+  top:146px;
+  font-family:'한자';
+  font-size: 180px;
+  color:rgba(78, 118, 228, .2);
+}
+.profile li:first-child{
+  top:146px;
+  z-index: 10;
+}
+.profile > ul img{
+  width:280px;
+  border-radius: 50%;
+  box-shadow: 0px 3px 6px rgba(0,0,0,.16);
+}
+.profile li:nth-child(3){
+  top:290px;
+  width:1059px;
+  font-family: '말랑말랑';
+  font-size: 70px;
+  font-weight: bold;
+  color:#190096;
+  z-index: 11;
+}
+
+
+
+
+
+
+
+
+
+/* 스킬 */
+.sk_con{
+  margin: 0px auto;
+  width:1200px;
+  font-family: '나눔스퀘어라운드';
+  display: flex;
+}
+.sk_con > li{width:600px;}
+
+
+
+
+
+/* 왼쪽 */
+.skill{
+  position: relative;
+  top:320px;
+}
+.sk_con_left{float:left; position: relative;}
+.sk_con_left > div{
+  position: relative;
+  top:40px; left:130px;
+}
+.sk_con_left > div > img{width:55%;}
+.sk_con_left > div > p{
+  position: absolute;
+  top:-35px; left:145px;
+  font-size:24px;
+  font-weight: bold;
+  opacity: 0;
+}
+.sk_con_left p:nth-child(3){top:65px; left:-30px;}
+.sk_con_left p:nth-child(4){top:65px; left:316px;}
+.sk_con_left p:nth-child(5){top:240px; left:-30px;}
+.sk_con_left p:nth-child(6){top:240px; left:316px;}
+.sk_con_left p:nth-child(7){top:334px;}
+
+.sk_con_left > p:last-child{
+  position: relative;
+  top:105px;
+  text-align: center;
+  line-height: 20px;
+  font-size:16px;
+  opacity: 0;
+}
+.sk_con_left > p:last-child > span{
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: -10px;
+}
+
+
+/* 오른쪽 */
+.sk_con > li:nth-child(2){position: relative;}
+.sk_con > li:nth-child(2) > p{padding:5px;}
+.sk_con > li:nth-child(2) > img{height:35px;}
+.bar01, .bar02, .bar03, .bar04, .bar05, .bar06{
+  position: relative;
+  top:-42px; left:53px;
+  width:0%;
+  padding:6px 10px;
+  background: #416EBF;
+  font-weight: bold;
+  color:#fff;
+  font-size: 16px;
+}
+.bar06{
+  background:#FF5440;
+  color:#fff;
+}
+.line{
+  position:relative;
+  top:17px; left:53px;
+  width:450px; height:4px;
+  border-radius: 2px;
+  background-color: #333;
+}
+.sk_con_right span{
+  position: absolute;
+  top:-10px; right:-85px;
+  font-size:24px;
+  font-weight: bold;
+  opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+/* 스퀘어 */
+.square > ul{
+  position: absolute;
+  right:0px; top:320px;
+  width:1200px; height:240px;
+  font-family: '나눔스퀘어라운드';
+  display: flex;
+  justify-content: space-between;
+  /* background-color: pink; */
+}
+.square > ul > li{
+  background:#fff;
+  border-radius: 10px;
+  width:240px; height:240px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 2px 3px 6px rgba(0,0,0,.16);
+}
+.square > ul > li:hover{
+  box-shadow: 2px 3px 6px rgba(0,0,0,.5);
+}
+.square > ul > li:hover .fas{
+  color:#416EBF;
+  /* font-size:72px; */
+  animation: slide 1.5s linear;
+  animation-iteration-count:infinite;
+}
+.square > ul .fas{
+  margin-top: 26px;
+  height:67px;
+  font-size:60px;
+  color:#333;
+  transition: 0.3s;
+}
+.square > ul > li > b{
+  font-size: 22px;
+}
+.square > ul > li > p{
+  margin-top: 18px;
+  font-size:13px;
+  line-height:18px;
+}
+.major, .workingon, .prize, .mind{
+  cursor: pointer;
+  /* opacity: 0; */
+}
+
+
+
+
+
+
+
+
+
+/* 동그라미 */
+.circle01{
+  position: absolute;
+  top:330px; left:-970px;
+  width:1300px; height:1300px;
+  background: rgba(78, 118, 228, .2);
+  border-radius: 50%;
+  box-shadow: 10px 5px 10px rgba(0,0,0,.16);
+}
+.circle02{
+  position: absolute;
+  top:1260px; left:10px;
+  width:500px; height:500px;
+  background: rgba(78, 118, 228, .2);
+  border-radius: 50%;
+  box-shadow: 10px 5px 10px rgba(0,0,0,.16);
+}

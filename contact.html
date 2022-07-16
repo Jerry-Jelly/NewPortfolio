@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>김지우의 포트폴리오</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="./css/style.css" type="text/css">
+  <link rel="stylesheet" href="./css/contact.css" type="text/css">
+
+  <!-- 아이콘폰트 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+  <style>
+    @font-face {
+      font-family: "나눔바른고딕";
+      src: url('./font/NanumBarunGothic.ttf');
+    }
+    @font-face {
+      font-family: "나눔스퀘어라운드";
+      src: url('./font/NanumSquareRoundR.ttf');
+    }
+    @font-face {
+      font-family: "말랑말랑";
+      src: url('./font/MalangmalangR.ttf');
+    }
+    @font-face {
+      font-family: "나눔스퀘어";
+      src: url('./font/NanumSquareL.ttf');
+    }
+    *{margin:0px; padding:0px;}
+    ul, ol, li{list-style: none;}
+    body{
+      width:100%;
+      font-size: 16px;
+      color: #333;
+      background: #fff;
+      font-family: '나눔바른고딕';
+    }
+    a{text-decoration:none; color:#333;}
+  </style>
+
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="./script/portfolio.js"></script>
+
+</head>
+<body>
+  <header>
+    <ul class="h_inner">
+      <li>
+        <a href="./index.html">
+          <i class="fas fa-circle"></i>
+          <span>Jiwoo-Kim</span> | web publishing
+        </a>
+      </li>
+      <li>
+        <a href="./resume.html" title="이력서보기">Resume</a> |
+        <a href="./works.html" title="작업물보기">Works</a> |
+        <a href="./contact.html" title="연락처보기">Contact</a>
+      </li>
+    </ul>
+  </header>
+
+
+
+
+
+  <main>
+    <div class="circle01"></div>
+    <div class="circle02"></div>
+
+    <article>
+      <section class="title">CONTACT</section>
+
+
+
+
+      <section class="con">
+        <ul>
+          <li>
+            <i class="fas fa-phone"></i>
+            <p>010-4772-9294</p>
+            <p>everytime, when you want :)</p>
+          </li>
+
+          <li>
+            <i class="fas fa-envelope"></i>
+            <p>zziwoo94@naver.com</p>
+            <p>jw13233055@gmail.com</p>
+          </li>
+        </ul>
+
+        <form name="이메일" method="post" action="send.php">
+          <fieldset>
+            <p>
+              <label for="email">보내는 이</label>
+              <input type="text" name="email" id="email" placeholder=" 회신받을 메일주소를 적어주세요."required>
+            </p>
+            <p>
+              <label for="subject">제목</label>
+              <input type="text" name="subject" id="subject" required>
+              <label for="name">이름</label>
+              <input type="text" name="name" id="name" required>
+            </p>
+            <p>
+              <label for="message">내용</label>
+              <textarea name="message" id="message" cols="30" rows="20" required></textarea>
+            </p>
+            <p>
+              <input type="submit" value="보내기">
+            </p>
+          </fieldset>
+        </form>
+      </section>
+    </article>
+  </main>
+
+
+
+
+
+  <footer>
+    <div class="f_line">
+      <ul class="f_inner">
+
+        <li class="f_icon">
+          <a href="https://www.facebook.com/profile.php?id=100003543633653" title="페이스북" class="fab fa-facebook-square"></a>
+          <a href="https://www.instagram.com/kkam__z/" title="인스타그램" class="fab fa-instagram"></a>
+          <a href="#" title="트위터" class="fab fa-twitter"></a>
+          <a href="#" title="카카오톡 - QR코드를 스캔해주세요!" class="fas fa-comment">
+          </a>
+        </li>
+
+        <img src="./images/kakaotalk.png" alt="카카오톡 프로필 QR코드" class="qr_code">
+  
+        <li class="f_text">
+          will always waiting for your contact, everytime when you want<br>Copyright ⓒ meet your wisdom all rights reserved. designed by Jiwoo-Kim
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
