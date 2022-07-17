@@ -168,4 +168,5 @@ footer{
   bottom:100px; right:-140px;
   float: right;
   width:130px;
+  z-index: 10;
 }
